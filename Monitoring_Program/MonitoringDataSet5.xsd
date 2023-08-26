@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MonitoringDataSet5" targetNamespace="http://tempuri.org/MonitoringDataSet5.xsd" xmlns:mstns="http://tempuri.org/MonitoringDataSet5.xsd" xmlns="http://tempuri.org/MonitoringDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MonitoringConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MonitoringConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Monitoring_Program.Properties.Settings.GlobalReference.Default.MonitoringConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="COSTSTableAdapter" GeneratorDataComponentClassName="COSTSTableAdapter" Name="COSTS" UserDataComponentName="COSTSTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MonitoringConnectionString (Settings)" DbObjectName="Monitoring.dbo.COSTS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Date_C FROM dbo.COSTS</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Date_C" DataSetColumn="Date_C" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MonitoringDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="MonitoringDataSet5" msprop:Generator_UserDSName="MonitoringDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="COSTS" msprop:Generator_TableClassName="COSTSDataTable" msprop:Generator_TableVarName="tableCOSTS" msprop:Generator_TablePropName="COSTS" msprop:Generator_RowDeletingName="COSTSRowDeleting" msprop:Generator_RowChangingName="COSTSRowChanging" msprop:Generator_RowEvHandlerName="COSTSRowChangeEventHandler" msprop:Generator_RowDeletedName="COSTSRowDeleted" msprop:Generator_UserTableName="COSTS" msprop:Generator_RowChangedName="COSTSRowChanged" msprop:Generator_RowEvArgName="COSTSRowChangeEvent" msprop:Generator_RowClassName="COSTSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date_C" msprop:Generator_ColumnVarNameInTable="columnDate_C" msprop:Generator_ColumnPropNameInRow="Date_C" msprop:Generator_ColumnPropNameInTable="Date_CColumn" msprop:Generator_UserColumnName="Date_C" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
